@@ -1,103 +1,75 @@
-import Image from "next/image";
+import React from 'react';
+import titleImg from '../public/asset3.svg';
+import Image from 'next/image';
+import './globals.css';
+import Card from '@/components/Card';
 
-export default function Home() {
+
+
+export default function OceanXPage() {
+
+ const cardData = [
+    {id: "01", title: "Founder’s Race Price", description: "Enjoy a super special early registration rate" },
+    {id: "02", title: "Founder’s Race Pack", description: "Premium, limited-edition OceanX merchandise" },
+    {id: "03", title: "Founder’s Team Edition", description: "Exclusive team tee & early team incentives" },
+  ];
+
+
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className=" w-full flex flex-col ">
+  
+  <div className="bg-[url('/KITLVbg.jpg')] bg-no-repeat bg-center bg-cover z-10 pb-80 pt-28 items-center justify-center">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+  <header className="flex flex-col max-h-screen items-center  ">
+              <h1 className="font-garamond flex py-10 lg:py-0  text-white gap-4 text-sm md:text-base tracking-[0.2em] uppercase"><span>L a u n c h i n g </span> <span>S o o n</span> </h1>
+              <Image src={titleImg} className='px-14 lg:px-0'  alt="OceanX Title" />
+            <div className="flex flex-col items-center justify-center text-base md:text-lg tracking-[0.2em] uppercase">
+              <p className=" text-lg md:text-xl text-white tracking-widest bg-cream/10 px-6 py-3">29TH OCTOBER — 2ND NOVEMBER 2025</p>
+              <p className=" text-lg md:text-xl text-white tracking-widest bg-cream/10 px-6">PENANG, MALAYSIA</p>
+              <p className="font-Jockey One text-lg md:text-xl text-white tracking-widest bg-cream/10 px-6 py-10">
+              BE PART OF THE FIRST WAVE, REGISTER AS A FOUNDER!
+            </p>
+            </div>
+
+   </header> 
+
+  </div>
+   <section className="flex flex-col items-center justify-center bg-asset5 mt-[-280px]   lg:h-[1020px] h-[1640px] z-90">   
+ <h3 className="font-cinzel text-xl md:text-2xl text-white uppercase pb-16">
+                Unlock Exclusive Founder Privileges
+              </h3>
+     <div className="lg:w-[80%] w-full flex lg:flex-row flex-col items-center justify-center gap-8  px-8">
+  {cardData.map((item) => (
+    <div
+      key={item.id}
+      className="flex flex-col items-center pt-4 font-montserrat justify-evenly bg-asset1 lg:h-[260px] h-[200px] z-30  lg:flex-1"
+    >
+      <Card title={item.title} description={item.description} />
     </div>
+  ))}
+</div>
+
+    </section>
+
+
+
+ 
+ 
+  
+  <div className=" bg-[url('/KITLVbg.jpg')] bg-no-repeat  bg-center bg-darken lg:pt-0 pt-20 lg:mt-[-180px] mt-[-280px]  lg:h-[400px] z-1 w-full h-[400px] flex flex-col items-center justify-center gap-6">
+    
+    <button className="bg-[#A8A298] text-2xl text-black px-6 py-3 rounded-sm tracking-[0.25em] md:text-rm] uppercase  transition">
+      Register Now as a Founder
+    </button>
+    <p className='text-white lg:text-xl text-center tracking-[0.25em]'>Limited spots available — This is your legacy moment.</p>
+  </div>
+       
+        
+
+       
+        
+      
+    </main>
   );
 }
