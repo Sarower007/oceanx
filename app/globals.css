@@ -25,4 +25,36 @@ body {
   
  
 }
+.bg-asset8 {
+  background-image: url('/asset8.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  
+ 
+}
+.bg-assetg {
+  background-image: url('/assetg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  
+ 
+}
+
+.bg-asset4 {
+  background-image: url('/asset4.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  
+ 
+}
+.bg-assetupcoming {
+  background-image: url('/ikdbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  
+ 
+}
 

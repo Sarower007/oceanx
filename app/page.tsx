@@ -1,8 +1,13 @@
 import React from 'react';
-import titleImg from '../public/asset3.svg';
+import titleImg from '../public/assetTitle.svg';
 import Image from 'next/image';
 import './globals.css';
 import Card from '@/components/Card';
+import Link from 'next/link';
+
+
+
+
 
 
 
@@ -17,12 +22,13 @@ export default function OceanXPage() {
 
 
   return (
-    <main className=" w-full flex flex-col ">
+    <main className=" relative  ">
+    <div className=" w-full flex flex-col ">
   
   <div className="bg-[url('/KITLVbg.jpg')] bg-no-repeat bg-center bg-cover z-10 pb-80 pt-28 items-center justify-center">
 
   <header className="flex flex-col max-h-screen items-center  ">
-              <h1 className="font-garamond flex py-10 lg:py-0  text-white gap-4 text-sm md:text-base tracking-[0.2em] uppercase"><span>L a u n c h i n g </span> <span>S o o n</span> </h1>
+              <h1 className="font-garamond flex py-10 lg:py-0 mb-14 text-white gap-4 text-sm md:text-base tracking-[0.2em] uppercase"><span>L a u n c h i n g </span> <span>S o o n</span> </h1>
               <Image src={titleImg} className='px-14 lg:px-0'  alt="OceanX Title" />
             <div className="flex flex-col items-center justify-center text-base md:text-lg tracking-[0.2em] uppercase">
               <p className=" text-lg md:text-xl text-white tracking-widest bg-cream/10 px-6 py-3">29TH OCTOBER — 2ND NOVEMBER 2025</p>
@@ -64,12 +70,27 @@ export default function OceanXPage() {
     </button>
     <p className='text-white lg:text-xl text-center tracking-[0.25em]'>Limited spots available — This is your legacy moment.</p>
   </div>
+
+
+  <div className='flex justify-end items-start px-4  text-2xl text-black  absolute bottom-0 pb-11 pr-11 w-full z-120'>
+      <Link
+        href="/activities"
+        className="inline-block px-4 py-2 rounded-md border bg-[#A8A298] text-2xl font-jockeyOne hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      >
+        Next Page →
+      </Link>
+    </div>
+
+
+
        
         
 
        
         
       
-    </main>
+    </div>
+
+     </main>
   );
 }
